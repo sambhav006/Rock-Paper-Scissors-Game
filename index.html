@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stone-paper-scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock.Paper.Scissors</h1>
+    <div class="choices">
+        <div class="choice" id="Rock">
+        <img src="./images/rock.png">
+    </div>
+    <div class="choice" id="Paper">
+    <img src="./images/paper.png">
+</div>
+<div class="choice" id="Scissors">
+        <img src="./images/scissors.png">
+    </div>
+</div>
+<div class="battle-area">
+    <div class="fighter">
+        <h2>You Chose</h2>
+        <img id="left-fight" src="./images/rock.png">
+    </div>
+
+    <div class="vs-text">VS</div>
+    <div class="fighter">
+        <h2>Computer Chose</h2>
+        <img id="right-fight" src="./images/paper.png">
+    </div>  
+</div>
+<div class="scoreboard">
+    <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+    </div>
+<div class="score">
+    <p id="comp-score">0</p>
+    <p>Comp</p>
+</div>
+</div>
+<div class="msg-container">
+    <p id="msg">Play your move</p>
+</div>
+<div class="restart-container">
+    <button id="restart-btn">Restart Game</button>
+</div>
+<div class="popup hide" id="popup">
+
+    <div class="popup-content">
+
+        <h1 id="winner-text"></h1>
+
+        <button id="play-again-btn">Play Again</button>
+
+    </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="first.js"></script>
+</body>
+</html>
